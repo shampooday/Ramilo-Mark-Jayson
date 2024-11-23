@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: 300;
+    font-style: Helvetica;
+    margin: 5px 5;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:burlywood;
+
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+}
+.container h1 {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+
+
+}
+.container .form{
+    margin-top: 30px;
+
+    
+}
+  
+.ATLAS{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ATLAS label{
+    color: black;
+
+}
+
+.ATLAS input,.select-box{
+    position: relative;
+    height: 50px;
+    width: 90%;
+    font-size: 1rem;
+    color: black;
+    margin-top: 6px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding:  0 15px;
+}
+
+.Age{
+    display: flex;
+    column-gap: 15px;
+    width: 40%;
+}
+
+.select-box{
+    display: flex;
+    column-gap: 15px;
+    width: 20%;
+}
+
+.gender-option,.gender{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.gender{
+    column-gap: 5px;
+}
+.gender input{
+    accent-color: black;
+
+}
+.gender input, .gender label{
+    cursor: pointer;
+}
+
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: black ;
+    font-size: 1rem;
+}   
+button {
+    height: 55px;
+    width: 100%;
+    color: black;
+    font-size: 1rem;
+    border: none;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 550;
+    transition: all 0.2s ease;
+    background-color: violet ;
+    border: 2px solid black;
+    margin: 20px 0;
+}
+
+button:hover{
+    background-color: yellow ;
+   
+}
+.columns{
+    display: flex;
+    column-gap: 85px;
+    
+}
+
+.columns .data{
+    font-size: 12px;
+    display: flex;
+    column-gap: 30px;
+    color: black;
+    
+}
+
+@media screen and (max-width: 500px){
+    .form .Age .select-box {
+        flex-wrap: wrap;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    }
+th, td {
+    padding: 12px;
+    border: 1px solid black;
+    }
+th {
+     background-color: violet;
+    }
+tr:nth-child(even) {
+    background-color: yellow;
+    }
